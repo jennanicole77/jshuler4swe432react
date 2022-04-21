@@ -121,7 +121,7 @@ export default function App(props) {
 <form method="post" action="https://jshuler4swe432.herokuapp.com/assignment8" name="form" id="formId">
 <div style="font-size:20px;" id="container">
 <label for="characteristics">Enter a number of characteristics to be created below (Please enter a valid number above 0):</label>
-<input type="number" id="characteristics" name="characteristics" min=1 required onInput="enterNumbers()">
+<input type="number" id="characteristics" name="characteristics" min="1" required onInput="enterNumbers()">
 <br><br>
 <div id="amountOfInputs"></div>
 <center>
