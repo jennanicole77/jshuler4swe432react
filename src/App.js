@@ -1,11 +1,11 @@
-import React, {useMemo, useState, useCallback} from 'react';
 
 export default function App(props) {
-    /*fetch('https://jshuler4swe432.herokuapp.com/assignment8')
+/*
+    fetch('https://jshuler4swe432.herokuapp.com/assignment8')
     .then(response => response.text())
     .then(data => {
             document.write(res);
-    });*/
+    });
 
     let numOfChar = 0;
     var container = document.getElementById("container");
@@ -29,8 +29,12 @@ export default function App(props) {
         var slider = document.getElementById("slider");
         container.style.fontSize = slider.value;
     }
-
+*/
     return (    
+        <div>
+            <h1> Hi </h1>
+        </div>
+  /*
         <html>
             <body onload="setFocus()">
                 <h1 style="text-align:center; color:black;">SWE 432 Assignment 8</h1>
@@ -40,11 +44,11 @@ export default function App(props) {
                 </div>
                 <div style = "text-align:center">
                     <h3 style="text-align:center; color:black;">Use the slider below to change the font size of the information below!</h3>
-                    <input type="range" min="15" max="40" id="slider" onchange="changeFontSizeSlider()" value="20"/>
+                    <input type="range" min="15" max="40" id="slider" onChange="changeFontSizeSlider()" value="20"/>
                 </div>
                 <form method="post" action="https://jshuler4swe432.herokuapp.com/assignment8" name="form" id="formId">
                     <div style="font-size:20px;" id="container">
-                        <label for="characteristics">Enter a number of characteristics to be created below (Please enter a valid number above 0):</label>
+                        <label htmlFor="characteristics">Enter a number of characteristics to be created below (Please enter a valid number above 0):</label>
                         <input type="number" id="characteristics" name="characteristics" min="1" required onInput="enterNumbers()"/>
                         <br/><br/>
                         <div id="amountOfInputs"></div>
@@ -55,5 +59,6 @@ export default function App(props) {
                 </form>
             </body>
         </html> 
+*/
     )
 }
