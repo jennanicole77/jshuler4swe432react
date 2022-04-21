@@ -67,9 +67,12 @@ export default async function App(props) {
     );
   }, [openLink]);
 */
-    let res = fetch('https://jshuler4swe432.herokuapp.com/assignment8')
-    .then(response => response.text());
-
+    let res = null;
+    fetch('https://jshuler4swe432.herokuapp.com/assignment8')
+    .then(response => response.text())
+    .then(data => {
+            res = data;
+    });
     return (res
 
    /* <Box sx={rootSX}>
