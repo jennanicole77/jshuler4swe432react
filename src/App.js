@@ -116,7 +116,7 @@ export default function App(props) {
 </div>
 <div style = "text-align:center">
 <h3 style="text-align:center; color:black;">Use the slider below to change the font size of the information below!</h3>
-<input type="range" min="15" max="40" id="slider" onchange="changeFontSizeSlider()" value="20"/>
+<input type="range" min="15" max="40" id="slider" onchange="changeFontSizeSlider()" value="20">
 </div>
 <form method="post" action="https://jshuler4swe432.herokuapp.com/assignment8" name="form" id="formId">
 <div style="font-size:20px;" id="container">
@@ -125,7 +125,7 @@ export default function App(props) {
 <br><br>
 <div id="amountOfInputs"></div>
 <center>
-<input type="submit"  style="color:#37AEE2; font-size: 16px; padding: 1rem 1.75rem; justify-content: center;"></input>
+<input type="submit"  style="color:#37AEE2; font-size: 16px; padding: 1rem 1.75rem; justify-content: center;">
 </center>
 </form>
 </div>
