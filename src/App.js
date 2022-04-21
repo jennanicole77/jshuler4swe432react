@@ -125,7 +125,7 @@ export default function App(props) {
 <br><br>
 <div id="amountOfInputs"></div>
 <center>
-<input type="submit"  style="color:#37AEE2; font-size: 16px; padding: 1rem 1.75rem; justify-content: center;">
+<input type="submit"  style="color:#37AEE2; font-size: 16px; padding: 1rem 1.75rem; justify-content: center;"></input>
 </center>
 </form>
 </div>
