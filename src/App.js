@@ -67,7 +67,7 @@ export default async function App(props) {
     );
   }, [openLink]);
 */
-const res = await fetch('https://jshuler4swe432.herokuapp.com/assignment8', {method:'GET', mode: 'cors', headers:{'Content-Type': 'application/x-www-form-urlencoded'}});
+const res = await fetch('https://jshuler4swe432.herokuapp.com/assignment8', {method:'GET', mode: 'no-cors', headers:{'Content-Type': 'application/x-www-form-urlencoded'}, crossDomain:true});
 console.log(res);
   return (res
 
