@@ -67,10 +67,13 @@ export default async function App(props) {
     );
   }, [openLink]);
 */
-const res = await fetch('https://jshuler4swe432.herokuapp.com/assignment8', {method:'GET', mode: 'no-cors', headers:{'Content-Type': 'application/x-www-form-urlencoded'}, crossDomain:true});
-const json = await res.json();
-console.log(json);
-  return (res
+    let res = fetch('https://jshuler4swe432.herokuapp.com/assignment8')
+    .then(response => response.text())
+    .then(data => {
+            document.write(data);
+    });
+
+    return (res
 
    /* <Box sx={rootSX}>
       <AppBar position="static">
